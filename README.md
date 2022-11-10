@@ -1,6 +1,5 @@
 # Tugas 7 PBP
-Yeira Putri Nandika
-2106751726
+Yeira Putri Nandika - 2106751726
 
 ### Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
 State widget adalah data dari objek yang propertinya atau parameternya akan dipertahankan pada saat widget tersebut dibuat.
