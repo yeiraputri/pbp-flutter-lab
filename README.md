@@ -46,9 +46,30 @@ Navigator.push akan menimpa halaman yang sudah ada dengan halaman yang baru. Unt
 ## Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
 Navigator mengimplementasikan suatu stack dimana pada saat suatu tampilan baru di push akan memunculkan tampilan baru tersebut dan akan menjadi di posisis top of stack. Tampilan tersebut juga akan pertama kali hilang karena berada pada posisi Top of Stack ketika fungsi Navigator.pop dipanggil.
 
-# Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 1. Membuat Drawer dengan routing ke counter_7, form, show_budget
 2. Membuat model Budget
 3. Membuat form untuk mendapatkan judul, nominal, jenis, dan tanggal dari user.
 4. Memasukkan data yang telah didapatkan dari form ke dalam list yang berisi Budget
 5. Membuat page untuk menampilkan data yang telah disimpan di dalam list Budget
+
+# Tugas 9
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Dimungkin untuk melakukan pengambilan data JSON tanpa model, tetapi data JSON yang diambil tidak dapat dipastikan sesuai dengan bentuk yang kita inginkan. Maka dari itu, lebih baik apabila dibuat model terlebih dahulu.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+* Checkbox : membuat checkbox yang memiliki suatu event onChange
+* FutureBuilder : membuat widget berdasarkan snapshot yang diambil dari Future
+* Expanded : membuat text tidak overflow
+
+## Jelaskan mekanisme pengambilan data dari JSON hingga dapat ditampilkan pada Flutter.
+Pertama-tama diperlukan untuk menambahkan dependensi HTTP yang dilanjutkan dengan melakukan GET pada data JSON. Data tersebut dikonversikan ke dalam model yang sudah dibuat. Data nantinya akan ditampilkan menggunakan FutureBuilder.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. Menambahkan navigasi ke mywatchlist pada drawer
+2. Menambahkan depedency http
+3. Membuat model untuk data json
+4. Membuat function untuk mengambil data json
+5. Menampilkan data dalam bentuk inkwell
+6. Membuat halaman detail untuk watchlist
